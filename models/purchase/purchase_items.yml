@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: purchase_items
+    description: This table has basic information about orders, as well as some derived facts based on purchase
+
+    columns:
+      - name: purchase_id
+        tests:
+          - unique
+          - not_null
+        description: This is a unique identifier for an purchase
+      - name: tenant_id
+        description: This is tenant id

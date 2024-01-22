@@ -1,0 +1,9 @@
+models:
+  - name: stg_purchase
+    description: Purchase data with basic cleaning and transformation applied, one row per purchase.
+    columns:
+      - name: purchase_id
+        description: The unique key for each purchase.
+        tests:
+          - not_null
+          - unique

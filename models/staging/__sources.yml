@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: poc
+    schema: '{{ target.schema }}'
+    description: E-commerce data
+    tables:
+      - name: purchase_sync
+        description: One record per person who has purchased one or more items
